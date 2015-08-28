@@ -20,9 +20,9 @@ setup(
     version='0.1.2',
     description='Elegant email library',
     long_description=open('README.rst', 'rb').read().decode('utf8'),
-    author='Eeo Jun',
+    author='Steven Li',
     author_email='packwolf58@gmail.com',
-    url='https://github.com/eugene-eeo/mailthon/',
+    url='https://github.com/cynic222/mailthon',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
