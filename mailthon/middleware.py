@@ -10,6 +10,7 @@
     :license: MIT, see LICENSE for details.
 """
 
+
 class Middleware(object):
     """
     Base class for middlewares. Middlewares are encouraged
@@ -57,5 +58,6 @@ class Auth(Middleware):
         self.password = password
 
     def __call__(self, conn):
-        conn.login(self.username,
-                   self.password)
+        if all((self.username, self.password)):
+            conn.login(self.username,
+                       self.password)
